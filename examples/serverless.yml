@@ -1,0 +1,22 @@
+service: example
+
+provider:
+  name: aws
+  runtime: provided.al2
+  region: ap-southeast-1
+  memorySize: 128
+
+custom:
+  dynamoDbExports:
+    tableName: "larry-notes-AppTable"
+    params:
+      foo: bar
+      stage: ${sls:stage}
+
+functions:
+  example:
+    handler: ./cmd/hello/.
+    timeout: 30
+
+plugins:
+  - serverless-dynamodb-outputs

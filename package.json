@@ -1,0 +1,44 @@
+{
+  "name": "serverless-dynamodb-outputs",
+  "version": "0.1.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "plugin",
+    "lambda",
+    "aws",
+    "outputs",
+    "dynamodb"
+  ],
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "node esbuild.js",
+    "fix": "gts fix",
+    "prepare": "pnpm run compile",
+    "pretest": "pnpm run compile",
+    "posttest": "pnpm run lint"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.5",
+    "@types/serverless": "^3.12.18",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "gts": "^5.3.0",
+    "typescript": "~5.4.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.540.0",
+    "@aws-sdk/util-dynamodb": "^3.540.0",
+    "esbuild": "^0.19.7"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
