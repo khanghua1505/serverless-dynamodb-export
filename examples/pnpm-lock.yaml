@@ -5,6 +5,6 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  serverless-dynamodb-outputs:
+  serverless-dynamodb-export:
     specifier: ../dist
     version: link:../dist

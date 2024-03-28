@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "serverless-dynamodb-outputs": "../dist"
+    "serverless-dynamodb-export": "^0.1"
   }
 }

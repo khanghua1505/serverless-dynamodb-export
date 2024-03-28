@@ -1,6 +1,6 @@
 {
   "name": "serverless-dynamodb-export",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A serverless plugin to export variables to AWS DynamoDB",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

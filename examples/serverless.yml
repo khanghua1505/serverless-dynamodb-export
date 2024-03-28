@@ -12,6 +12,7 @@ custom:
     params:
       foo: bar
       stage: ${sls:stage}
+      exampleFunctionId: !GetAtt ExampleLambdaFunction.Arn
 
 functions:
   example:
@@ -19,4 +20,4 @@ functions:
     timeout: 30
 
 plugins:
-  - serverless-dynamodb-outputs
+  - serverless-dynamodb-export

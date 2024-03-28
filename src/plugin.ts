@@ -40,7 +40,7 @@ class ServerlessDynamoDbOutputs implements Plugin {
                 {
                   type: 'object',
                   additionalProperties: {
-                    type: 'string',
+                    oneOf: [{type: 'string'}, {type: 'object'}],
                   },
                 },
                 {
@@ -50,7 +50,9 @@ class ServerlessDynamoDbOutputs implements Plugin {
                     properties: {
                       hashKey: {type: 'string'},
                       rangeKey: {type: 'string'},
-                      value: {type: 'string'},
+                      value: {
+                        oneOf: [{type: 'string'}, {type: 'object'}],
+                      },
                     },
                     required: ['hashKey', 'value'],
                   },
