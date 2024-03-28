@@ -1,9 +1,13 @@
 {
-  "name": "serverless-dynamodb-outputs",
+  "name": "serverless-dynamodb-export",
   "version": "0.1.0",
-  "description": "",
+  "description": "A serverless plugin to export variables to AWS DynamoDB",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "homepage": "https://github.com/khanghua1505/serverless-dynamodb-export.git",
+  "repository": {
+    "url": "https://github.com/khanghua1505/serverless-dynamodb-export.git"
+  },
   "files": [
     "dist",
     "assets"
@@ -14,8 +18,9 @@
     "plugin",
     "lambda",
     "aws",
+    "dynamodb",
     "outputs",
-    "dynamodb"
+    "export"
   ],
   "scripts": {
     "lint": "gts lint",
