@@ -7,7 +7,7 @@ provider:
   memorySize: 128
 
 custom:
-  dynamoDbExports:
+  dynamodbExport:
     tableName: "larry-notes-AppTable"
     params:
       foo: bar

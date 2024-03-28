@@ -16,7 +16,7 @@ interface TableProperties {
   };
 }
 
-async function describeTable(table: string): Promise<TableProperties> {
+export async function describeTable(table: string): Promise<TableProperties> {
   const client = useAWSClient(DynamoDBClient);
   const input = new DescribeTableCommand({
     TableName: table,
